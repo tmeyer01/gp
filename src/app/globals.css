@@ -1,4 +1,4 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -16,7 +16,7 @@
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -26,7 +26,7 @@ body {
     rgb(var(--background-start-rgb));
 } */
 
-:root{
+/* :root{
   --bg:white;
   --textColor:black;
   --softBg:#f0f0f0;
@@ -54,17 +54,17 @@ a{
   min-height: 100vh;
   background-color: var(--bg);
   color: var(--textColor);
-}
+} */
 
-.wrapper{
+/* .wrapper{
   max-width: 1536px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 80px;
   padding-right: 80px;
-}
+} */
 
-@media screen and (max-width:1536px) {
+/* @media screen and (max-width:1536px) {
 
   .wrapper{
     max-width: 1366px;
@@ -97,6 +97,6 @@ a{
   .wrapper{
     max-width: 475px;
   }
-}
+} */
 
 
