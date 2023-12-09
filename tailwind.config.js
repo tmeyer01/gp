@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        heroLanding: 'url(/assets/hero/hero-background.png)'
+        heroLanding: 'url(/assets/hero/hero-background.png)',
+        heroAdventures: 'url(/assets/hero/hero-adventures.jpg)',
       },
       fontFamily: {
         alexBrush: [`var(--font-alexBrush)`, 'sans-serif'],

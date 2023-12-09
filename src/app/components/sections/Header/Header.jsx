@@ -37,8 +37,8 @@ const Header = ({ params }) => {
     // Set text color based on the current route
     if (pathname === "/" || null) {
       setItemColor("white");
-    } else if (pathname === "/blog") {
-      setItemColor("red-500");
+    } else if (pathname === "/adventures") {
+      setItemColor("white");
     } else if (pathname === "/adventure") {
       setItemColor("purple-500");
     }
@@ -47,7 +47,7 @@ const Header = ({ params }) => {
   return (
     <header
       className={`w-full 2xl:max-w-[105rem] fixed top-0 z-50 border-solid transition-all content-center h-28 text-${itemColor} ${
-        activeScroll ? `bg-[#030315] py-8` : `bg-transparent py-8`
+        activeScroll ? `bg-[#030315] py-8 text-white` : `bg-transparent py-8`
       }`}
     >
       {/* <div className="flex items-center justify-center h-full"> */}
@@ -66,7 +66,7 @@ const Header = ({ params }) => {
         <NavMobile />
         {/* nav button */}
         <div className="absolute right-7 top-[10%] xl:hidden">
-          <MenuBtn itemColor={`${itemColor}`} />
+          <MenuBtn itemColor={`${itemColor}`} activeScroll={activeScroll} />
         </div>
       </div>
     </header>

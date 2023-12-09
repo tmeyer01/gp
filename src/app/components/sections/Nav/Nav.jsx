@@ -15,12 +15,12 @@ const links = [
     label: "Adventures",
   },
   {
-    href: "/blog",
-    label: "Blog",
+    href: "/route",
+    label: "Routes",
   },
   {
-    href: "/merchandise",
-    label: "Merchandise",
+    href: "/gallery",
+    label: "Gallery",
   },
   {
     href: "/contact",

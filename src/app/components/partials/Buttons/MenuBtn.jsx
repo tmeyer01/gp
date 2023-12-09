@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 
 import { NavContext } from "@/context/NavContext";
 
-const MenuBtn = ({ itemColor }) => {
+const MenuBtn = ({ itemColor, activeScroll }) => {
   const { setIsOpen } = useContext(NavContext);
 
   console.log("-------->", itemColor);

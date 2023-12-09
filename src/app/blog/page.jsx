@@ -3,7 +3,7 @@ import React from "react";
 import { NavContext } from "@/context/NavContext";
 import NavWhiteSpace from "@/app/components/sections/Nav/NavWhiteSpace/NavWhiteSpace";
 
-function blog() {
+function about() {
   return (
     <>
       <NavWhiteSpace />
@@ -241,4 +241,4 @@ function blog() {
   );
 }
 
-export default blog;
+export default about;
