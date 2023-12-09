@@ -4,14 +4,17 @@ import { adventureData } from "@/app/adventures/adventureData";
 
 import { useParams } from "next/navigation";
 
-function Adventure({ adventureId }) {
+function Adventure() {
   const params = useParams();
 
-  console.log(params.id);
+  // const searchParams = useSearchParams();
+
+  console.log(params);
+  // console.log(searchParams);
 
   const id = params.id;
 
-  // Find the adventureData based on the id
+  // // Find the adventureData based on the id
   const currentAdventure = adventureData.find(
     (adventure) => adventure.path === id
   );
@@ -24,6 +27,7 @@ function Adventure({ adventureId }) {
     <>
       {/* <p>{currentAdventure.discription}</p> */}
       <p>{currentAdventure.discription}</p>
+      <div>HELLO</div>
     </>
   );
 }
