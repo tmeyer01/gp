@@ -8,7 +8,6 @@ import Link from "next/link";
 
 import { useParams } from "next/navigation";
 import Nav from "@/app/components/sections/Nav/Nav";
-// import Nav from "@/app/components/sections/Nav/Nav";
 
 // components
 

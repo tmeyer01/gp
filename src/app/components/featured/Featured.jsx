@@ -1,10 +1,11 @@
-import NavComp from "@/app/components/sections/Nav/NavCompinsator/NavComp";
+import NavWhiteSpace from "@/app/components/sections/Nav/NavWhiteSpace/NavWhiteSpace";
+// import NavComp from "@/app/components/sections/Nav/NavWhiteSpace/NavWhiteSpace";
 import Link from "next/link";
 
 function Featured() {
   return (
     <>
-      <NavComp />
+      <NavWhiteSpace />
       <div>
         Its
         <div>Featured</div>
