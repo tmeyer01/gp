@@ -15,7 +15,7 @@ import MenuBtn from "@/app/components/partials/Buttons/MenuBtn";
 
 const Header = ({ params }) => {
   const [activeScroll, setActiveScroll] = useState(false);
-  const [textColor, setTextColor] = useState("");
+  const [itemColor, setItemColor] = useState("");
   const pathname = usePathname();
 
   useEffect(() => {
@@ -36,17 +36,17 @@ const Header = ({ params }) => {
   useEffect(() => {
     // Set text color based on the current route
     if (pathname === "/" || null) {
-      setTextColor("text-white");
+      setItemColor("white");
     } else if (pathname === "/blog") {
-      setTextColor("text-red-500");
+      setItemColor("red-500");
     } else if (pathname === "/adventure") {
-      setTextColor("text-purple-500");
+      setItemColor("purple-500");
     }
   }, [pathname]);
 
   return (
     <header
-      className={`w-full 2xl:max-w-[105rem] fixed top-0 z-50 border-solid transition-all content-center h-28 ${textColor} ${
+      className={`w-full 2xl:max-w-[105rem] fixed top-0 z-50 border-solid transition-all content-center h-28 text-${itemColor} ${
         activeScroll ? `bg-[#030315] py-8` : `bg-transparent py-8`
       }`}
     >
@@ -60,13 +60,13 @@ const Header = ({ params }) => {
         {/* nav */}
         <Nav
           watchingScroll={activeScroll}
-          containerStyles="hidden xl:flex items-center  gap-x-8"
+          containerStyles="hidden xl:flex items-center gap-x-8"
         />
         {/* nav mobile */}
         <NavMobile />
         {/* nav button */}
         <div className="absolute right-7 top-[10%] xl:hidden">
-          <MenuBtn />
+          <MenuBtn itemColor={`${itemColor}`} />
         </div>
       </div>
     </header>

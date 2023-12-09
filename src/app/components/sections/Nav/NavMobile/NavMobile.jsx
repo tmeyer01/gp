@@ -14,7 +14,7 @@ const NavMobile = () => {
   return (
     <nav
       className={`${isOpen ? "right-0" : "-right-full"}
-        xl:hidden fixed bg-black w-full top-0 z-20 bottom-0 transition-all duration-500 border-2 border-solid py-12`}
+        xl:hidden fixed bg-black w-full top-0 z-20 bottom-0 transition-all duration-500  py-12 `}
     >
       <div
         onClick={() => setIsOpen(false)}
@@ -23,10 +23,10 @@ const NavMobile = () => {
         <RiCloseLine className="text-5xl" />
       </div>
       <div
-        className="h-full place-content-center"
+        className="flex h-full self-center py-6 justify-center "
         onClick={() => setIsOpen(false)}
       >
-        <Nav containerStyles="flex flex-col text-[30px] uppercase font-bold bg-black h-full items-center justify-center gap-y-6" />
+        <Nav containerStyles="flex  flex-col text-[30px] uppercase bg-black  h-full items-center justify-center gap-y-6" />
       </div>
     </nav>
   );
