@@ -1,10 +1,10 @@
 
-import CardList from '@/app/components/cardList/CardList'
-import CatergoryList from '@/app/components/catergoryList/CatergoryList'
+// import CardList from '@/app/components/cardList/CardList'
+// import CatergoryList from '@/app/components/catergoryList/CatergoryList'
 import Featured from '@/app/components/featured/Featured'
-import Menu from '@/app/components/menu/Menu'
-import Image from 'next/image'
-import Link from 'next/link'
+// import Menu from '@/app/components/menu/Menu'
+// import Image from 'next/image'
+// import Link from 'next/link'
 
 
 export default function Home() {
@@ -12,11 +12,11 @@ export default function Home() {
 
     <div>
     <Featured/>
-    <CatergoryList/>
+    {/* <CatergoryList/>
       <div>
       <CardList/>
       <Menu/>
-      </div>
+      </div> */}
     </div>
   )
 }
