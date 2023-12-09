@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useContext } from "react";
-import { NavContext } from "@/context/NavContext";
-
 import { RiCloseLine } from "react-icons/ri";
+
+import { NavContext } from "@/context/NavContext";
 
 // components
 import Nav from "../Nav";
@@ -14,7 +14,7 @@ const NavMobile = () => {
   return (
     <nav
       className={`${isOpen ? "right-0" : "-right-full"}
-        xl:hidden fixed bg-primary w-full top-0 z-20 bottom-0 transition-all duration-500`}
+        xl:hidden fixed bg-black w-full top-0 z-20 bottom-0 transition-all duration-500 border-2 border-solid py-12`}
     >
       <div
         onClick={() => setIsOpen(false)}
@@ -26,7 +26,7 @@ const NavMobile = () => {
         className="h-full place-content-center"
         onClick={() => setIsOpen(false)}
       >
-        <Nav containerStyles="flex flex-col text-[30px] uppercase font-bold bg-pink-500/10 h-full items-center justify-center gap-y-8" />
+        <Nav containerStyles="flex flex-col text-[30px] uppercase font-bold bg-black h-full items-center justify-center gap-y-6" />
       </div>
     </nav>
   );

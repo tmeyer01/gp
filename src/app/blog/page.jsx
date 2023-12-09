@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { NavContext } from "@/app/context/NavContext";
+import { NavContext } from "@/context/NavContext";
 import NavWhiteSpace from "@/app/components/sections/Nav/NavWhiteSpace/NavWhiteSpace";
 
 function blog() {

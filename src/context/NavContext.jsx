@@ -5,13 +5,9 @@ export const NavContext = createContext();
 
 const NavContextProvider = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
-  // const [navColor, setNavColor] = useState(false);
 
   return (
-    <NavContext.Provider
-      value={{ isOpen, setIsOpen }}
-      // colorValue={{ navColor, setNavColor }}
-    >
+    <NavContext.Provider value={{ isOpen, setIsOpen }}>
       {children}
     </NavContext.Provider>
   );

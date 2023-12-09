@@ -7,9 +7,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { useParams } from "next/navigation";
-import Nav from "@/app/components/sections/Nav/Nav";
 
 // components
+import Nav from "@/app/components/sections/Nav/Nav";
+import NavMobile from "@/app/components/sections/Nav/NavMobile/NavMobile";
+import MenuBtn from "@/app/components/partials/Buttons/MenuBtn";
 
 const Header = ({ params }) => {
   const [activeScroll, setActiveScroll] = useState(false);
@@ -48,8 +50,24 @@ const Header = ({ params }) => {
         activeScroll ? `bg-[#030315] py-8` : `bg-transparent py-8`
       }`}
     >
-      <div className="flex items-center justify-center h-full">
-        <Nav />
+      {/* <div className="flex items-center justify-center h-full"> */}
+      {/* <Nav
+          watchingScroll={activeScroll}
+          containerStyles="hidden xl:flex items-center  gap-x-8"
+        /> */}
+      {/* </div> */}
+      <div className="container mx-auto flex flex-col xl:flex-row items-center justify-between ">
+        {/* nav */}
+        <Nav
+          watchingScroll={activeScroll}
+          containerStyles="hidden xl:flex items-center  gap-x-8"
+        />
+        {/* nav mobile */}
+        <NavMobile />
+        {/* nav button */}
+        <div className="absolute right-7 top-[10%] xl:hidden">
+          <MenuBtn />
+        </div>
       </div>
     </header>
   );

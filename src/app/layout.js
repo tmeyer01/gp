@@ -6,7 +6,7 @@ import { Alex_Brush, Anton, Montserrat } from 'next/font/google'
 // import Navbar from '@/app/components/navbar/Navbar'
 
 // context provider
-import NavContextProvider from '@/app/context/NavContext';
+import NavContextProvider from '@/context/NavContext';
 import Header from '@/app/components/sections/Header/Header';
 
 const alexBrush = Alex_Brush({
