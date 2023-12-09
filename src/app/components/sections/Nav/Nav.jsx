@@ -44,7 +44,7 @@ const Nav = () => {
       {links.map((link, index) => (
         <Link
           href={link.href}
-          className={`cursor-pointer relative h-full flex items-center`} // Added h-full, flex, and items-center
+          className={`cursor-pointer relative h-full flex items-center`}
           key={index}
           onClick={() => setSelected(link.href)}
         >
