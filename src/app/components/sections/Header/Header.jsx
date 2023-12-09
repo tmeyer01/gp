@@ -44,7 +44,7 @@ const Header = ({ params }) => {
 
   return (
     <header
-      className={`sm:max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-5xl 2xl:max-w-7xl max-w-screen-2xl w-full lg:px-10 xl:px-10 ml-auto mr-auto fixed z-50 border-solid transition-all content-center h-28 ${textColor} ${
+      className={`w-full 2xl:max-w-[105rem] fixed top-0 z-50 border-solid transition-all content-center h-28 ${textColor} ${
         activeScroll ? `bg-[#030315] py-8` : `bg-transparent py-8`
       }`}
     >

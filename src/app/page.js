@@ -1,10 +1,12 @@
-import Featured from '@/app/components/featured/Featured'
+// import Featured from '@/app/components/featured/Featured'
+import LandingHero from '@/app/components/views/LandingHero/LandingHero'
 
 export default function Home() {
   return (
 
     <div>
-    <Featured/>
+    {/* <Featured/> */}
+    <LandingHero/>
     </div>
   )
 }

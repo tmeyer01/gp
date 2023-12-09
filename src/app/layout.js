@@ -32,6 +32,7 @@ export const metadata = {
   description: 'cycling gravel, and pavé',
 }
 
+{/* <div className='sm:max-w-md md:max-w-2xl lg:max-w-3xl  xl:max-w-5xl  2xl:max-w-7xl max-w-screen-2xl w-full bg-lime-500   ml-auto mr-auto '> */}
 export default function RootLayout({ children }) {
   return (
     <NavContextProvider>
@@ -40,10 +41,12 @@ export default function RootLayout({ children }) {
       <body className={`${alexBrush.variable} ${montserrat.variable} ${anton.variable} overflow-x-hidden relative `}>
         <div className='min-h-screen'>
           <div className='flex justify-center'>
-            <Header />
-              <div className='sm:max-w-md md:max-w-2xl lg:max-w-3xl  xl:max-w-5xl  2xl:max-w-7xl max-w-screen-2xl w-full bg-lime-500  lg:px-10 xl:px-10 ml-auto mr-auto '>
+            <div className='w-full 2xl:max-w-[105rem] max-w-screen-6xl  bg-lime-500   ml-auto mr-auto '>
+              <Header />
+              <div >
                 {children}
               </div>
+            </div>
           </div>
         </div>
       </body>
