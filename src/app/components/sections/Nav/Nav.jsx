@@ -15,7 +15,7 @@ const links = [
     label: "Adventures",
   },
   {
-    href: "/route",
+    href: "/routes",
     label: "Routes",
   },
   {
