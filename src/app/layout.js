@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
 
     <html lang="en">
       <body className={`${alexBrush.variable} ${montserrat.variable} ${anton.variable} overflow-x-hidden relative `}>
-        <div className='min-h-screen'>
+        <div className='min-h-screen bg-black'>
           <div className='flex justify-center'>
             <div className='w-full 2xl:max-w-[105rem] max-w-screen-6xl  bg-lime-500   ml-auto mr-auto '>
               <Header />

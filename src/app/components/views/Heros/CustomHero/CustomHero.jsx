@@ -14,11 +14,11 @@ import { usePathname } from "next/navigation";
 import { fadeIn } from "../../../../../../variants";
 
 const CustomHero = ({ backgroundImage, title }) => {
-  console.log(backgroundImage);
+  console.log("backgroundImage", backgroundImage);
 
   return (
     <motion.section
-      className={`relative bg-fixed bg-cover w-full bg-center bg-no-repeat h-[60vh] bg-black  bg-${backgroundImage}`}
+      className={` bg-${backgroundImage} relative bg-fixed bg-cover w-full bg-center bg-no-repeat h-[60vh]`}
     >
       <motion.div
         transition={{ delay: 0.7 }}
